@@ -65,7 +65,7 @@ class _MainScreenState extends State<MainScreen> {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Spacer(
             //   flex: 1,
