@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../home_ui.dart';
-
 class CalculationScreen extends StatefulWidget {
   CalculationScreen(
       {Key? key,
@@ -154,6 +152,19 @@ class _CalculationScreenState extends State<CalculationScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class CustomText extends StatelessWidget {
+  CustomText({Key? key, this.size, this.text}) : super(key: key);
+  String? text;
+  double? size;
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: TextStyle(fontSize: size ?? 24),
     );
   }
 }

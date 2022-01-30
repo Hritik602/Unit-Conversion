@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'Screen/responsive_view.dart';
+import 'package:unit_conversion/Screen/Mobile/mobile_home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +27,9 @@ class MyApp extends StatelessWidget {
         iconTheme:
             const IconThemeData(color: Color.fromRGBO(255, 180, 35, 1.0)),
         cardColor: const Color.fromRGBO(0, 0, 0, 1.0),
-        scaffoldBackgroundColor: Color.fromRGBO(82, 87, 93, 1.0),
+        scaffoldBackgroundColor: const Color.fromRGBO(82, 87, 93, 1.0),
       ),
-      home: const ResponsiveUI(),
+      home: MobileView(),
     );
   }
 }
