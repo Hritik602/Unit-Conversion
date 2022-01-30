@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home_ui.dart';
+import 'Screen/responsive_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +15,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Unit Conversion',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+            elevation: 0.0,
+            color: Color.fromRGBO(
+              82,
+              87,
+              93,
+              1.0,
+            )),
+        primaryTextTheme: const TextTheme(),
+        textTheme: const TextTheme(headline6: TextStyle(color: Colors.white)),
+        iconTheme:
+            const IconThemeData(color: Color.fromRGBO(255, 180, 35, 1.0)),
+        cardColor: const Color.fromRGBO(0, 0, 0, 1.0),
+        scaffoldBackgroundColor: Color.fromRGBO(82, 87, 93, 1.0),
       ),
-      home: const MainScreen(),
+      home: const ResponsiveUI(),
     );
   }
 }
